@@ -1,0 +1,11 @@
+.path-frontpage .main-container .region-content a {
+  text-decoration: none; }
+  .path-frontpage .main-container .region-content a:hover {
+    text-decoration: underline; }
+
+.main-container .region-content a {
+  text-decoration: underline; }
+  .main-container .region-content a:hover {
+    text-decoration: none; }
+
+/*# sourceMappingURL=general-overrides.css.map */
