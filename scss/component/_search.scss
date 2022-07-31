@@ -1,0 +1,178 @@
+/******************
+ * Helper classes *
+ ******************/
+ .visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+.headerSearch__button {
+  padding: 0;
+  border: 0;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+.flex-auto {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+}
+
+/******************
+ * Search styles  *
+ ******************/
+.region-logo {
+  position: relative;
+}
+#block-headersearch {
+  position: static;
+}
+
+.user-login-form button#edit-submit{
+  padding: 6px 12px;
+}
+
+.headerSearch__open {
+  @extend .headerSearch__button;
+  background-color: white;
+  text-transform: uppercase;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  display: flex;
+}
+.headerSearch__open__text {
+  display: none;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  font-family: "ITC Franklin Gothic LT W01DmCn", Arial, sans-serif;
+  color: #E57200;
+  font-size: 2rem;
+  letter-spacing: 0.24375rem;
+  align-self: center;
+
+  @media #{$normal} {
+    display: inline-block;
+  }
+}
+.headerSearch__open__icon {
+  color: white;
+  background-color: $brand-primary;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  height: 82px;
+
+  @media #{$tablet} {
+    height: 85px;
+  }
+}
+.headerSearch__form {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  background-color: #f1f4f8;
+  max-width: 100%;
+}
+/* search form transition */
+.headerSearch__form {
+  width: 0;
+  transition: width .2s linear;
+
+  &--is-open {
+    width: 100%;
+
+    @media #{$tablet} {
+      width: 600px;
+    }
+  }
+}
+@supports (clip-path: circle(0% at 100% 50%)) {
+  .headerSearch__form {
+    width: 100%;
+    clip-path: circle(0% at 100% 50%);
+    transition: clip-path .2s linear;
+
+    &--is-open {
+      clip-path: circle(150% at 100% 50%);
+    }
+
+    @media #{$tablet} {
+      width: 600px;
+    }
+  }
+}
+/* end search form transition */
+.headerSearch__inputLabel {
+  @extend .visually-hidden;
+}
+.headerSearch__input {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border: 0;
+  background-color: transparent;
+  @extend .flex-auto;
+  font-family: "ITC Franklin Gothic LT W01 Bk", Arial, sans-serif;
+  font-size: 2rem;
+  color: #232D4B;
+}
+.headerSearch__submit {
+  @extend .headerSearch__button;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+.headerSearch__submit__text {
+  padding: .5rem 2rem;
+  background-color: $brand-primary;
+  color: white;
+  font-family: "ITC Franklin Gothic LT W01DmCn", Arial, sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.24375rem;
+}
+.headerSearch__close {
+  @extend .headerSearch__button;
+  background-color: transparent;
+  font-size: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.headerSearch__close__icon {
+  padding: 0;
+
+  @media #{$normal} {
+    padding: 1.5rem;
+  }
+}
+
+$iconSize: 2rem;
+$thickness: 1.5px;
+.headerSearch__close__icon__x {
+  position: relative;
+  height: 2rem;
+  width: 2rem;
+}
+.icon__x {
+  position: absolute;
+  background-color: $brand-primary;
+  width: $thickness;
+  height: $iconSize;
+}
+.headerSearch__close__icon__x1 {
+  @extend .icon__x;
+  transform: translate($iconSize*.5) rotate(45deg);
+}
+.headerSearch__close__icon__x2 {
+  @extend .icon__x;
+  transform: translate($iconSize*.5) rotate(-45deg);
+}

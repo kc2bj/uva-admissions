@@ -1,0 +1,80 @@
+@import "default-variables";
+// @todo these should be their own CSS files and only included when
+// specific Drupal libraries are used.
+
+/************************
+** Bootstrap components
+************************/
+
+@import "../../../../all/themes/uvatemplate/scss_global/component/ajax";
+@import "../../../../all/themes/uvatemplate/scss_global/component/alert";
+@import "../../../../all/themes/uvatemplate/scss_global/component/field";
+@import "../../../../all/themes/uvatemplate/scss_global/component/file";
+@import "../../../../all/themes/uvatemplate/scss_global/component/filter";
+@import "../../../../all/themes/uvatemplate/scss_global/component/form";
+@import "../../../../all/themes/uvatemplate/scss_global/component/icon";
+@import "../../../../all/themes/uvatemplate/scss_global/component/node";
+@import "../../../../all/themes/uvatemplate/scss_global/component/panel";
+@import "../../../../all/themes/uvatemplate/scss_global/component/progress-bar";
+@import "../../../../all/themes/uvatemplate/scss_global/component/table-drag";
+@import "../../../../all/themes/uvatemplate/scss_global/component/tabs";
+@import "../../../../all/themes/uvatemplate/scss_global/component/toolbar";
+
+// UVA template component files
+@import "../../../../all/themes/uvatemplate/scss_global/component/uva-base/general"; //done
+@import "../../../../all/themes/uvatemplate/scss_global/component/uva-base/main-container"; //done
+
+//Regions
+@import "../../../../all/themes/uvatemplate/scss_global/component/uva-base/header"; //done
+@import "../../../../all/themes/uvatemplate/scss_global/component/uva-base/navbar";
+@import "../../../../all/themes/uvatemplate/scss_global/component/uva-base/branding"; //done
+@import "../../../../all/themes/uvatemplate/scss_global/component/uva-base/footer"; //done
+@import "../../../../all/themes/uvatemplate/scss_global/component/uva-base/help-region"; //done
+
+//Content Types
+@import "../../../../all/themes/uvatemplate/scss_global/component/uva-base/articles";  //done
+@import "../../../../all/themes/uvatemplate/scss_global/component/uva-base/basicpage"; //done
+@import "../../../../all/themes/uvatemplate/scss_global/component/uva-base/events"; //done
+@import "../../../../all/themes/uvatemplate/scss_global/component/uva-base/news"; //done
+@import "../../../../all/themes/uvatemplate/scss_global/component/uva-base/people"; //done
+
+//Blocks
+@import "../../../../all/themes/uvatemplate/scss_global/component/uva-base/breadcrumb"; //done
+@import "../../../../all/themes/uvatemplate/scss_global/component/uva-base/calltoaction"; //done
+@import "../../../../all/themes/uvatemplate/scss_global/component/uva-base/homepage-quote"; //done
+@import "../../../../all/themes/uvatemplate/scss_global/component/uva-base/homepage-sunbursts"; //done
+@import "../../../../all/themes/uvatemplate/scss_global/component/uva-base/homepage-overrides"; //done
+@import "../../../../all/themes/uvatemplate/scss_global/component/uva-base/related-links";
+@import "../../../../all/themes/uvatemplate/scss_global/component/uva-base/slideshow";
+@import "../../../../all/themes/uvatemplate/scss_global/component/uva-base/sidebar-menu";
+@import "../../../../all/themes/uvatemplate/scss_global/component/uva-base/superfish-mobile";
+@import "../../../../all/themes/uvatemplate/scss_global/component/uva-base/important-notice";
+
+//Paragraphs
+@import "../../../../all/themes/uvatemplate/scss_global/component/paragraphs/misc";
+@import "../../../../all/themes/uvatemplate/scss_global/component/paragraphs/curated-links";
+@import "../../../../all/themes/uvatemplate/scss_global/component/paragraphs/diagonal-cta";
+@import "../../../../all/themes/uvatemplate/scss_global/component/paragraphs/images-layouts";
+@import "../../../../all/themes/uvatemplate/scss_global/component/paragraphs/quote-layouts";
+@import "../../../../all/themes/uvatemplate/scss_global/component/paragraphs/mosaic";
+@import "../../../../all/themes/uvatemplate/scss_global/component/paragraphs/quicklinks";
+@import "../../../../all/themes/uvatemplate/scss_global/component/paragraphs/stats";
+@import "../../../../all/themes/uvatemplate/scss_global/component/paragraphs/three-col-layout";
+@import "../../../../all/themes/uvatemplate/scss_global/component/paragraphs/accordion";
+@import "../../../../all/themes/uvatemplate/scss_global/component/paragraphs/full-width-text";
+
+
+
+
+// jQuery UI style overrides.
+@import "../../../../all/themes/uvatemplate/scss_global/jquery-ui/autocomplete";
+
+
+//Put local component files here
+@import "component/general-overrides";
+@import "component/regions-overrides";
+@import "component/paragraph-overrides";
+@import "component/search";
+@import "component/menu-overrides";
+@import "component/accordions";
+@import "component/hpuwy-pages";

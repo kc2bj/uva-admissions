@@ -1,0 +1,113 @@
+#mobile-menu {
+  display: none !important;
+}
+
+body.sf-expanded{
+  height: 100%;
+  overflow: hidden;
+  &::before{
+    content: ' ';
+    position: fixed;
+    top:0;left:0;right:0;bottom:0;
+    z-index: 0;
+    background-color: $brand-primary2;
+    opacity: .9;
+    z-index: 400;
+  }
+}
+
+#navbar{
+  z-index: 500;
+}
+
+body.sf-expanded{
+  height: 100%;
+  overflow: hidden;
+  &::before{
+    content: ' ';
+    position: fixed;
+    top:0;left:0;right:0;bottom:0;
+    z-index: 0;
+    background-color: $brand-primary2;
+    opacity: .9;
+    z-index: 400;
+  }
+}
+
+.block-superfish{
+  position: relative;
+}
+
+#superfish-main-accordion{
+  right: 0;
+  box-shadow: none;
+
+  a.sf-depth-1.menuparent{
+    &::after{
+      content: ' +';
+      color: $brand-contrast;
+    }
+  }
+
+  .sf-depth-1.menuparent.sf-expanded{
+    background: $brand-primary;
+    padding-bottom: 30px;
+
+    > a.sf-depth-1.menuparent{
+        &::after{
+          content: ' ---';
+          color: $brand-contrast;
+        }
+      }
+  }
+}
+
+#superfish-main-toggle{
+  padding-right: 30px;
+  background-image: url(/sites/all/themes/global/images/mobile-menu-white.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &.sf-expanded{
+    background-image: url(/sites/all/themes/global/images/caret-up-white.png);
+    background-size: 16px;
+  }
+}
+
+ul.sf-menu.sf-accordion li ul{
+  background: $brand-primary;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 400px;
+  margin: 0 auto;
+
+  &::after{
+    content: ' ';
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: calc(50% - 1px);
+    right: calc(50% - 1px);
+    background-color: white;
+    opacity: .3;
+  }
+  li{
+    background: transparent;
+    display: block;
+    width: 50%;
+    text-align: left;
+    font-size: 14px;
+    margin: 0;
+    border: none;
+    padding-left: 30px;
+  }
+}
+
+.menuparent.sf-expanded a.menuparent{
+  background-image: none;
+}
+
+ul.sf-menu.sf-accordion.sf-expanded, ul.sf-menu.sf-accordion li.sf-expanded > ul{
+  right: 0 !important;
+}

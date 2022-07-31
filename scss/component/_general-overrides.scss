@@ -1,0 +1,116 @@
+
+//ensure all links  within body text are underlined
+.path-frontpage {
+	.main-container {
+		.region-content {
+			a {
+				text-decoration:none;
+				&:hover {
+					text-decoration:none;
+				}
+			}
+		}
+	}
+
+	@media #{$normal} {
+
+	}
+}
+
+.main-container {
+	.region-content {
+		p > a {
+			text-decoration:underline;
+			&:hover {
+				text-decoration:none;
+			}
+		}
+	}
+}
+
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .navbar.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .navbar .container {
+    width: 100%;
+  }
+}
+
+// Prevent SuperFish menu from flashing on page load
+.sf-depth-1 ul {
+  display: none;
+}
+
+/*mobile menu - removed auto cloned top item */
+#superfish-main-accordion {
+    li.sf-clone-parent {
+      display:none;
+    }
+
+    @media #{$normal} {
+
+	}
+}
+
+.navbar-default {
+	display: block !important;
+}
+
+//Letter Spacing
+
+h1, h2 {
+	letter-spacing: 0.24375rem;
+}
+
+.uva-logo-block img{
+	width: 317px;
+}
+
+/*Sidebar menu*/
+
+aside.col-sm-3 .region-sidebar-first {
+
+	.dropdown-toggle {
+		color: #E57200;
+	}
+
+	.navbar-nav li.active a {
+		background: none;
+		color: #232D4B;
+	}
+
+	h2 {
+			background: none;
+			border-bottom: solid 1px #E57200;
+	}
+
+	ul {
+		position: relative;
+
+		.dropdown-menu {
+			display: block;
+			border: none;
+			box-shadow: none;
+			background: none;
+			z-index: 0;
+		}
+
+		.caret {
+			display: none;
+		}
+	}
+}
+
+td, th {
+	padding: .5em;
+}
+
+/*Resources Page*/
+
+[class*="block-grid-"] > .grid {
+    margin-bottom: 2em;
+    margin-top: 2em;
+}

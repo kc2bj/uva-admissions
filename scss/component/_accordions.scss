@@ -1,0 +1,56 @@
+.paragraph--type--accordion-page-item {
+
+  margin-bottom: 0;
+
+  .field--name-field-accordion-heading {
+    font-family: $font-family-demicond;
+    font-size: 36px;
+    color: $brand-primary;
+    text-transform: uppercase;
+    margin:40px  0 0 0;
+  }
+
+  .field--name-field-title {
+    font-size: 1.4em;
+    font-family: $font-family-demi;
+    color: #666;
+    border-bottom: solid 1px #ddd;
+    line-height: 2;
+    position: relative;
+    padding:20px 60px 20px 0;
+    line-height:1.2em;
+
+    &:focus, a:focus {
+      outline:none;
+      outline:1px dotted $brand-primary;
+    }
+    &:hover {
+      cursor:pointer;
+    }
+
+    &::after{
+      content: '+';
+      border: solid 3px;
+      box-sizing: border-box;
+      line-height: 1;
+      width: 30px;
+      height: 30px;
+      display: block;
+      position: absolute;
+      right: 0;
+      top: calc(50% - 10px);
+      text-align: center;
+      border-radius: 50%;
+    }
+  }
+  .field--name-field-accordion-{
+    display: none;
+    padding: 10px;
+  }
+
+  &.expanded{
+    .field--name-field-title::after{
+      content: '\2013';
+    }
+  }
+}

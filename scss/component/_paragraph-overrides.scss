@@ -1,0 +1,190 @@
+.stat-group {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.paragraph--type--statistics-block {
+    margin: 4em auto;
+
+  @media #{$normal} {
+    margin: 4em auto 8em;
+  }
+}
+
+/**
+Two-Column Layout
+**/
+
+.paragraph--type--two-column-layout {
+
+  .more-link {
+
+    text-align: center;
+    float: none;
+    margin: 2em auto;
+
+  	a {
+  		background: #141E3C;
+      font-family: "ITC Franklin Gothic LT W01 Md", Arial, sans-serif;
+  	}
+
+  }
+}
+
+.paragraph--type--two-column-layout .more-link a:hover {
+  background: #EB5F0C;
+}
+
+  /** Left Column **/
+
+  .two-column-left {
+    border-right: solid 2px #ddd;
+    padding: 2em;
+
+    .layout--onecol .layout__region {
+      margin-bottom: 4em;
+    }
+
+    img.img-responsive {
+      margin: 0 auto;
+    }
+
+    // .diagonal-title {
+    //
+    //     background: url(/sites/vpr/themes/uvatemplate/images/hp-grayhorizline.png) repeat-x center center;
+    //     background-size: 5px auto;
+    //     margin-bottom: 2em;
+    //
+    //     .field--name-node-title {
+    //
+    //       display: inline-block;
+    //       line-height: 1;
+    //       text-transform: uppercase;
+    //       text-align: center;
+    //       background: #fff;
+    //       border-left: #979797 solid 1px;
+    //       border-right: #979797 solid 1px;
+    //       left: 50%;
+    //       letter-spacing: 0.24375rem;
+    //       position: relative;
+    //       -moz-transform: skew(-20deg) translateX(-50%);
+    //       -ms-transform: skew(-20deg translateX(-50%));
+    //       -o-transform: skew(-20deg translateX(-50%));
+    //       -webkit-transform: skew(-20deg) translateX(-50%);
+    //       transform: skew(-20deg) translateX(-50%);
+    //
+    //
+    //       h2 {
+    //
+    //         display: block;
+    //         padding: 0.375rem 2rem;
+    //         -moz-transform: skew(20deg);
+    //         -ms-transform: skew(20deg);
+    //         -o-transform: skew(20deg);
+    //         -webkit-transform: skew(20deg);
+    //         transform: skew(20deg);
+    //       }
+    //
+    //     }
+    // }
+
+    // .field--item {
+    //   margin: 1em auto;
+    // }
+  }
+
+  /** Right Column **/
+
+    .two-column-right {
+      padding: 2em;
+
+      .diagonal-title {
+
+          background: url(/sites/vpr/themes/uvatemplate/images/hp-grayhorizline.png) repeat-x center center;
+          background-size: 5px auto;
+          margin-bottom: 3em;
+          margin-top: 1em;
+
+          .diagonal-header {
+
+            display: inline-block;
+            line-height: 1;
+            text-transform: uppercase;
+            text-align: center;
+            background: #fff;
+            border-left: #979797 solid 1px;
+            border-right: #979797 solid 1px;
+            left: 50%;
+            letter-spacing: 0.24375rem;
+            margin-bottom: 0;
+            position: relative;
+            -moz-transform: skew(-20deg) translateX(-50%);
+            -ms-transform: skew(-20deg translateX(-50%));
+            -o-transform: skew(-20deg translateX(-50%));
+            -webkit-transform: skew(-20deg) translateX(-50%);
+            transform: skew(-20deg) translateX(-50%);
+
+
+            h2 {
+
+              display: block;
+              padding: 0.375rem 2rem;
+              margin-top: 0;
+              margin-bottom: 0;
+              -moz-transform: skew(20deg);
+              -ms-transform: skew(20deg);
+              -o-transform: skew(20deg);
+              -webkit-transform: skew(20deg);
+              transform: skew(20deg);
+            }
+      }
+
+  }
+
+  .event-date {
+
+    height: 50px;
+    background-image: linear-gradient(to bottom, #E57200 0%, #F07676);
+    color: #fff;
+    font-family: "ITC Franklin Gothic LT W01DmCn", Arial, sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+
+    @media #{$tablet} {
+      height: 265px;
+    }
+
+    p {
+      margin: 3em auto;
+    }
+  }
+
+  .event-info {
+
+    height: 275px;
+
+    h2 {
+      font-family: "ITC Franklin Gothic LT W01 Bk", Arial, sans-serif;
+      text-transform: inherit;
+    }
+
+        @media #{$tablet} {
+          height: 365px;
+        }
+
+        @media #{$normal} {
+          height: 275px;
+        }
+
+    a {
+      color: #E57200;
+      font-family: "ITC Franklin Gothic LT W01DmCn", Arial, sans-serif;
+      font-size: 1.25em;
+    }
+
+      a:hover {
+        color: #232D4B;
+      }
+  }
+
+}

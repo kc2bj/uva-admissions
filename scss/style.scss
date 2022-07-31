@@ -1,0 +1,12 @@
+//this is a master file that call in all the scss code files. Feel free to add other files to this, in order, including media query files.
+
+//# sourceMappingURL=../css/style.css.map
+
+// Bootstrap Framework.
+@import '../bootstrap/assets/stylesheets/bootstrap';
+
+// UVA Variables.
+@import "../../../all/themes/uvatemplate/scss_global/default-variables";
+
+// Base-theme overrides.
+@import 'overrides';

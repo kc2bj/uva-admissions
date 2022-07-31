@@ -1,0 +1,607 @@
+/**
+Logo Region
+**/
+
+#block-cvalinksblock {
+
+  float: right;
+	display: none;
+	margin: 1.75em 3em 0 0;
+
+	@media #{$tablet} {
+		display: block;
+	}
+
+	@media #{$normal} {
+
+		margin: 25px 15em 25px 0;
+	}
+
+		.cvalinks-container {
+			list-style: none;
+			display: flex;
+			flex-wrap: wrap;
+			position: relative;
+			margin-right: 1em;
+
+		.cvalinks-item {
+
+			a {
+				color: #fff;
+				font-size: 14px;
+				font-family: "ITC Franklin Gothic LT W01 Dm", Arial, sans-serif;
+				text-shadow: 0px 3px 6px #00000029;
+				text-transform: uppercase;
+			}
+
+			a:hover {
+				text-decoration: none;
+				color: #E57100;
+			}
+
+      a.apply-link::after {
+            content: none;
+      }
+
+			a::after {
+  			content: "\002F";
+				color: #E57200;
+				margin: auto 1.5em;
+			}
+		}
+	}
+}
+
+.logo {
+
+	p#search-open-text {
+	  color: #232D4B;
+	  font-family: "ITC Franklin Gothic LT W01DmCn", Arial, sans-serif;
+	  font-size: 28px;
+	  text-transform: uppercase;
+	  font-style: normal;
+		}
+
+  .uva-logo-block {
+      padding: 25px 0;
+    }
+}
+
+/**
+Navigation Region
+**/
+
+header#navbar {
+	background-color: #141E3C;
+	height: 200px;
+  border: 0;
+  border-radius: 0;
+}
+
+#mobile-menu {
+  display: block!important;
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+  background: url("/sites/admission/files/hamburger_white.png") 0px 0px no-repeat;
+  height: 32px;
+  width: 32px;
+}
+
+ul.sf-menu.sf-accordion {
+    background: none;
+
+  li {
+    background: none;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  li a {
+    color: #fff;
+
+  }
+}
+
+ul.sf-menu.sf-accordion.sf-expanded {
+    position: absolute;
+
+}
+
+.sf-accordion-toggle {
+  padding: 30px 10px;
+  background: none;
+  border-top: 0;
+  border-bottom: solid 1px #666;
+  letter-spacing: 0.24375rem;
+
+  #superfish-main-toggle {
+    color: #fff;
+    text-transform: uppercase;
+  }
+}
+
+/**
+Branding Region
+**/
+
+/**
+Preface Region
+**/
+
+/** Title Background Positioning fix for All Safari Versions **/
+
+#block-admissiontitleblock,
+#block-visittitleblock,
+#block-connecttitleblock,
+#block-applytitleblock {
+  position: relative;
+  background-color: #141e3c;
+  text-align: center;
+
+  // .selector:not(*:root) {}.title-background {
+  //   display: none;
+  // }
+
+	@media #{$tablet} {
+		padding-top: 0.9375rem;
+		padding-right: 1.5625rem;
+		padding-bottom: 0.9375rem;
+		padding-left: 1.5625rem;
+	}
+
+	@media #{$normal} {
+		padding-top: 0;
+		padding-right: 0;
+		padding-bottom: 0;
+		padding-left: 0;
+	}
+
+	.field--name-body {
+		margin-bottom: -6.875rem;
+    position: relative;
+
+		@media #{$tablet} {
+			margin-bottom: -3.875rem;
+		}
+
+		@media #{$normal} {
+			margin-bottom: -3.875rem;
+		}
+	}
+
+	.super-title {
+		padding-right: 4rem;
+		padding-left: 4rem;
+		font-family: "ITC Franklin Gothic LT W01 Dm", Arial, sans-serif;
+		font-size: 28px;
+		line-height: 1.1819;
+		font-weight: 900;
+		color: #fff;
+		letter-spacing: 0.125rem;
+		text-transform: uppercase;
+	}
+
+	.title-foreground {
+		font-style: normal;
+		font-family: "ITC Franklin Gothic LT W01 Dm", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 0.8334;
+    position: relative;
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 2;
+    margin-bottom: 1.25rem;
+    display: inline-block;
+
+		@media #{$tablet} {
+			font-size: 60px;
+		}
+	}
+
+		.title-background {
+
+			z-index: -1;
+			-webkit-text-stroke-width: 1px;
+			-webkit-text-stroke-color: #eb5f0c;
+			color: transparent;
+			font-style: normal;
+			font-family: "ITC Franklin Gothic LT W01 Dm", Arial, sans-serif;
+			font-weight: 700;
+			font-size: 45px;
+			line-height: 0.8334;
+			position: absolute;
+    	bottom: -0.3125rem;
+      left: 0;
+      right: 0;
+      text-align: center;
+			text-transform: uppercase;
+			z-index: 1;
+			margin-bottom: 1.25rem;
+			display: inline-block;
+
+			@media #{$tablet} {
+				font-size: 60px;
+			}
+	}
+}
+
+#block-visittitleblock,
+#block-connecttitleblock,
+#block-applytitleblock {
+	background: none;
+	margin-top: -2.5em;
+
+	@media #{$wide} {
+		margin-top: -2em;
+	}
+}
+
+#block-connectvisitapplyblock {
+	background: #E57200;
+	background-size: cover;
+	position: relative;
+	width: 100vw;
+	left: 50%;
+	right: 50%;
+	margin-left: -50vw;
+	margin-right: -50vw;
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: antialiased;
+
+	.cva-container {
+		list-style: none;
+		display: flex;
+    flex-wrap: wrap;
+    position: relative;
+		padding: 1em;
+		margin-bottom: 0;
+
+		@media #{$normal} {
+			padding: 2em 3em;
+		}
+	}
+
+	.cva-item {
+
+		border: solid 2px #fff;
+    width: 100%;
+    position: relative;
+		margin: 4% 1%;
+		display: block;
+
+		@media #{$tablet} {
+
+			margin: 0 1%;
+			width: 30%;
+		}
+
+		a {
+
+			font-family: "ITC Franklin Gothic LT W01DmCn", Arial, sans-serif;
+	    font-size: 26px;
+	    color: #fff;
+			display: block;
+			text-align: left;
+			padding: 20px 20px 20px 10px;
+			margin: .5em;
+		}
+
+		a:hover {
+			text-decoration: none;
+			color: #141E3C;
+	    transition: all .8s ease;
+		}
+
+		a::after {
+			border-style: solid;
+	    border-color: #fff;
+	    border-width: 0 5px 5px 0;
+	    display: block;
+	    padding: 5px;
+	    position: absolute;
+	    right: 20px;
+	    top: calc(50% - 5px);
+	    transform: rotate(-45deg);
+	    -webkit-transform: rotate(-45deg);
+	    content: ' ';
+	    transition: all .8s ease;
+		}
+
+		a:hover::after {
+			border-color: #141E3C;
+		}
+
+	}
+
+	.cva-item:hover {
+
+		border-color: #141E3C;
+		transition: all .8s ease;
+	}
+}
+
+#block-visitintroblock,
+#block-connectintroblock,
+#block-applyintroblock {
+	background: transparent linear-gradient(180deg, #E57200 0%, #EF3F6B 100%) 0% 0% no-repeat padding-box;
+	opacity: 1;
+	padding: 2em 3em;
+
+	p {
+		font-size: 22px;
+		font-family: "ITC Franklin Gothic LT W01DmCn", Arial, sans-serif;
+		text-align: center;
+		letter-spacing: 0px;
+		color: #FFFFFF;
+	}
+}
+
+/**
+Content Region
+**/
+
+  /** Pop Up Ad **/
+
+  #block-popupad {
+    // display: none;
+  }
+
+  //Parent
+  #spb-block-popupad {
+
+    //Background & Wrapper
+
+    .spb_overlay {
+      background: #232D4BE6 0% 0% no-repeat padding-box;
+    }
+
+    .spb-popup-main-wrapper {
+      border: none;
+    }
+
+    .spb_close {
+      border: none;
+      cursor: pointer;
+      float: right;
+      margin: 3px;
+      padding: 3px 10px;
+      color: #fff;
+      background: #dadada;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+
+
+    .spb_minimize {
+      border: none;
+      cursor: pointer;
+      float: right;
+      margin: 3px;
+      padding: 3px 10px;
+      color: #fff;
+      background: #dadada;
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  //Identifier
+  #block-popupad {}
+
+  //Modal Class
+  .block-popupad-modal {}
+
+  //Modal close class
+  .block-popupad-modal-close {}
+
+  //Modal minimize class
+  .block-popupad-modal-minimize {}
+
+  //Modal minimized class
+  .block-popupad-modal-minimized {}
+
+  //Override positions
+  .block-popupad-modal .spb_center {
+    padding: 1em;
+
+    .ad-container {
+      padding: 2em;
+
+      p {
+        text-align: center;
+      }
+
+      .button-container {
+
+        .popup-btn {
+
+            margin-top: 30px;
+            a{
+              font-family: $font-family-sans-serif;
+              padding: 15px 50px;
+              text-transform: uppercase;
+              background-color: $brand-primary;
+              color: white;
+              transition: background-color .8s ease;
+
+              &:hover{
+                text-decoration: none;
+                background-color: lighten($brand-primary, 10);
+              }
+            }
+        }
+      }
+    }
+  }
+
+  /** Resource Library **/
+
+  .resource-link a {
+    color: #E57200;
+    font-family: "ITC Franklin Gothic LT W01DmCn", Arial, sans-serif;
+    text-decoration: none;
+
+    &:hover {
+      color: #232D4B;
+    }
+  }
+
+  /** People **/
+
+  .view-people-page .views-row {
+    background: #E7E8EF;
+  }
+
+  /** Accordion **/
+
+  .ui-accordion {
+
+    .ui-accordion-content {
+      border-left: none;
+      border-right: none;
+    }
+
+    .ui-accordion-header {
+      border-radius: 0;
+      border: none;
+      background: #232D4B;
+      margin: 0;
+      padding: 1em;
+    }
+
+    dt {
+      display: inline-block;
+    }
+
+    .ui-accordion-header-collapsed {
+      background: none;
+      border-bottom: #C6C6C6 1px solid;
+
+      .ui-accordion-header-icon .ui-icon .ui-icon-triangle-1-e {
+        color: #E7E8EF;
+      }
+    }
+
+    .ui-accordion-header-icon .ui-icon .ui-icon-triangle-1-s {
+      color: #fff;
+    }
+  }
+
+  /** Search **/
+
+#views-exposed-form-faqs-page-1, #views-exposed-form-resources-page-1 {
+
+  input#edit-combine {
+    width: 100%;
+    background: #F0F0F0;
+    border-radius: 0;
+    font-family: "ITC Franklin Gothic LT W01DmCn", Arial, sans-serif;
+    margin-bottom: 1em;
+  }
+}
+
+#views-exposed-form-faqs-page-1.bef-exposed-form .form--inline > .form-item.form-type-textfield,
+#views-exposed-form-resources-page-1.bef-exposed-form .form--inline > .form-item.form-type-textfield {
+  width: 100%;
+  border-radius: 0;
+}
+
+.form-item-field-school-department-target-id {
+  margin-right: 1em;
+
+  .select-wrapper::after {
+    color: #fff;
+  }
+
+  #edit-field-school-department-target-id {
+    width: 180px;
+    height: 40px;
+    background: #141E3C;
+    border-radius: 0;
+    color: #fff;
+  }
+}
+
+.form-item-field-category-target-id {
+  margin-right: 1em;
+
+  .select-wrapper::after {
+    color: #fff;
+  }
+
+  #edit-field-category-target-id {
+    width: 180px;
+    height: 40px;
+    background: #141E3C;
+    border-radius: 0;
+    color: #fff;
+  }
+}
+
+#edit-submit-resources,
+#edit-submit-faqs {
+  background: #232D4B;
+  border-radius: 0;
+  height: 40px;
+}
+
+#edit-reset {
+  border-radius: 0;
+  height: 40px;
+}
+
+  /** Contact Webform **/
+
+  #block-webform {
+  }
+
+/**
+Postscript Region
+**/
+
+.postscript {
+	background: #E7E8EF;
+}
+
+/**
+Footer Region
+**/
+
+.footer {
+	border-top: #E57200 8px solid;
+}
+
+/**
+Footer Secondary Region
+**/
+
+.footer-second {
+  background: #141E3C;
+  margin-top: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #fff;
+  font-size: 15px;
+  font-family: "ITC Franklin Gothic LT W01 Bk", Arial, sans-serif;
+  text-align: center;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 1.2;
+    margin-right: 1.5em;
+  }
+
+  .copyright-section {
+    color: #fff;
+    font-size: 11px;
+    line-height: 1.2;
+  }
+}

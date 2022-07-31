@@ -1,0 +1,267 @@
+
+//ensure all links  within body text are underlined
+.page-node-type-hpuwy-pages {
+	.logo,
+	.navbar,
+	.breadcrumb,
+	.postscript,
+	.footer,
+	.footer-second {
+		display:none;
+	}
+	.main-container {
+		margin-top:0;
+		margin-bottom:0;
+
+
+		h1.page-header {
+			margin:0;
+			padding:0;
+			border:0 none;
+		}
+
+	}
+	.navbar-default {
+		display:none !important;
+	}
+
+	.paragraph--type--_00-width-text {
+		padding:0;
+		margin-top:0;
+		margin-bottom:0;
+		clear:both;
+		overflow:hidden;
+
+		.green-background {
+			background:#316500;
+			overflow:hidden;
+			display:block;
+
+			img {
+				float:right;
+			}
+		}
+		.logos {
+
+			position:relative;
+			margin-bottom:-20px;
+			margin:0 0 -19px 15px;
+
+			@media #{$tablet} {
+				margin:0 0 -27px 20px;
+			}
+
+			@media #{$normal} {
+				margin:0 0 -27px 60px;
+			}
+
+			ul {
+				margin:20px 0 0;
+				padding:0;
+
+				@media #{$normal} {
+					margin:0;
+				}
+
+				li {
+					list-style:none;
+					display:inline-block;
+					/*width:130px;
+					height:130px;*/
+					width:18%;
+
+					@media #{$tablet} {
+						width:auto;
+					}
+
+					a {
+						width:100%;
+						height:85px;
+						display:block;
+						
+
+						@media #{$tablet} {
+							width:115px;
+							height:130px;
+						}
+
+
+						&.harvard {
+							background:url("/sites/admission/files/bt_harvard_top_off.gif") no-repeat bottom center;
+							background-size: cover;
+							&:hover {
+								background:url("/sites/admission/files/bt_harvard_top_on.gif") no-repeat bottom center;
+								background-size: cover;
+								text-decoration: none;
+							}
+						}
+						&.princeton {
+							background:url("/sites/admission/files/bt_princeton_top_off.gif") no-repeat bottom center;
+							background-size: cover;
+							&:hover {
+								background:url("/sites/admission/files/bt_princeton_top_on.gif") no-repeat bottom center;
+								background-size: cover;
+								text-decoration: none;
+							}
+						}
+						&.uva {
+							background:url("/sites/admission/files/bt_uva_top_off.gif") no-repeat bottom center;
+							background-size: cover;
+							&:hover {
+								background:url("/sites/admission/files/bt_uva_top_on.gif") no-repeat bottom center;
+								background-size: cover;
+								text-decoration: none;
+							}
+						}
+						&.wellesley {
+							background:url("/sites/admission/files/bt_well_top_off.gif") no-repeat bottom center;
+							background-size: cover;
+							&:hover {
+								background:url("/sites/admission/files/bt_well_top_on.gif") no-repeat bottom center;
+								background-size: cover;
+								text-decoration: none;
+							}
+						}
+						&.yale {
+							background:url("/sites/admission/files/bt_yale_off.png") no-repeat bottom center;
+							background-size: cover;
+							&:hover {
+								background:url("/sites/admission/files/bt_yale_on.png") no-repeat bottom center;
+								background-size: cover;
+								text-decoration: none;
+							}
+						}
+					}
+				}
+			}
+		}
+		.hpuwy-content-section-wrapper {
+			background:#282828;
+			color:#fff;
+			width:100%;
+			border-top:10px solid black;
+			border-bottom:20px solid black;
+
+			.hpuwy-content-section {
+
+				padding:20px;
+				font-size:16px;
+
+				@media #{$normal} {
+					padding:40px 0;
+					margin:0 auto;
+					width:960px;
+				}
+				@media #{$wide} {
+					width:1200px;
+				}
+
+				.two-col-wrapper {
+					display:flex;
+					
+					align-items: flex-start;
+					flex-wrap:wrap;
+					justify-content: space-between;
+
+					@media #{$normal} {
+						
+						flex-wrap:nowrap;
+					}
+
+					.first-col-hpuwy,
+					.second-col-hpuwy {
+
+						vertical-align: top;
+						font-size:14px;
+						padding-bottom:25px;
+
+						@media #{$normal} {
+							padding-bottom:0;
+							width:48%;
+						}
+					}
+
+					
+				}
+			}
+		}
+	}
+	
+
+	#bullet-top {
+	    border-left: solid 9px #cb4e32;
+	    border-radius: 5px;
+	    padding-left: 9px;
+	}
+	#bullet-mid {
+	    border-left: solid 9px #ac422b;
+	    border-radius: 5px;
+	    padding-left: 9px;
+	}
+	#bullet-bot {
+	    border-left: solid 9px #893825;
+	    border-radius: 5px;
+	    padding-left: 9px;
+	}
+	.content-bulletpoints {
+	    font-size: 14px;
+	    font-weight: normal;
+	    margin-bottom: 15px;
+	}
+	.content-resources {
+	    color: #ffae00;
+	    font-size: 14px;
+	    font-weight: normal;
+	    width: 205px;
+	    margin: 25px auto 0;
+
+	    ul li {
+		    margin: 0 0 0 0px;
+		    /*list-style-image: none;
+		    background: url("/images/bullet01.gif");*/
+		    font-size: 14px;
+		    color: #cccccc;
+
+		    a {
+			    font-size: 14px;
+			    color: #cccccc;
+			    text-decoration: none;
+			    outline: none;
+
+			    &:hover {
+			    	color:$brand-contrast;
+			    }
+			}
+		}
+	}
+	.date-column {
+	    background-color: #141414;
+	    padding: 15px 15px;
+	    border-radius: 5px;
+	    margin:15px auto 0;
+	    width: 250px;
+	    font-size:16px;
+
+	    a {
+		    color: #ffae00;
+		    font-size: 16px;
+		    font-weight: normal;
+		    text-decoration: none;
+		    outline: none;
+
+		     &:hover {
+		    	color:$brand-contrast;
+		    }
+		}
+	}
+}
+
+/*.page-node-type-hpuwy-pages.user-logged-in {
+	.col-sm-12.subpage-header {
+			display:block;
+		}
+}
+*/
+
+
+
